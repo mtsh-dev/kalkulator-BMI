@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/script.js"></script>
+</head>
+
+<body>
+    <div id="calculator">
+        <h2>Kalkulator BMI</h2>
+
+        <label for="weight">Waga (kg):</label>
+        <input type="number" id="weight" placeholder="Podaj wagę" required>
+
+        <label for="height">Wzrost (cm):</label>
+        <input type="number" id="height" placeholder="Podaj wzrost" required>
+
+        <label for="gender">Płeć:</label>
+        <select id="gender">
+            <option value="male">Mężczyzna</option>
+            <option value="female">Kobieta</option>
+        </select>
+
+        <button onclick="calculateBMI()">Oblicz BMI</button>
+
+        <div id="result"></div>
+
+        <div id="note">
+            <p>Zakresy wartości BMI:</p>
+            <ul>
+                <li>mniej niż 16 - wygłodzenie</li>
+                <li>16 - 16.99 - wychudzenie</li>
+                <li>17 - 18.49 - niedowaga</li>
+                <li>18.5 - 24.99 - wartość prawidłowa</li>
+                <li>25 - 29.99 - nadwaga</li>
+                <li>30 - 34.99 - I stopień otyłości</li>
+                <li>35 - 39.99 - II stopień otyłości</li>
+                <li>powyżej 40 - otyłość skrajna</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
